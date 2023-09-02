@@ -1,0 +1,6 @@
+CSS
+-The total height of any device is 100vh ( that is complete height of the veiwport).
+-The reason we are giving main's height as auto because here we cannot fix the height of the complete website because website lenght keep getting extended so you can make it as auto or don't mention it
+
+HTML
+-if you type #and_some_id_name then press enter then you will get an div tag with that id.
