@@ -10,7 +10,18 @@
 @font-face
 {
     font-family: 'Vercetti Regular';
-    src: url("/Award-Ceremony-Nomination/TrueType WOFFs/Vercetti-Regular.woff") format('woff');
+    src: url("/Award-Ceremony-Nomination/Vercetti-Regular.woff") format('woff');
+}
+
+#minicircle
+{
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    z-index: 99999999;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 #nav
@@ -48,8 +59,9 @@ html,body
     color: white;
     width: 100%;
     /*height: 100%; means the complete first screen look will be covered by hero div only*/
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
+    position: relative;
 }
 
 #heading
@@ -151,7 +163,7 @@ html,body
     padding: 0vw 12vw 0vw 4vw;
     margin-top: 25vh;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -246,4 +258,71 @@ html,body
     padding: 0.6vw 2vw;
     border-radius: 50px;
     text-decoration: none;
+}
+
+#subscribe
+{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+    
+}
+
+#subscribe>h5
+{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1.2vh;
+    opacity: 0.6;
+    font-weight: 200;
+}
+
+#subscribe>h6
+{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+#footer
+{
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#footerleft
+{
+    gap: 2vw;
+    display: flex;
+}
+
+#footerleft>h5
+{
+    font-weight: 500;
+}
+
+
+#footerright
+{
+    gap: 40px;
+    display: flex;
+    font-weight: 500;
+}
+
+#footerright>a
+{
+    color: white;
+    font-size: 1.2vw;
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
