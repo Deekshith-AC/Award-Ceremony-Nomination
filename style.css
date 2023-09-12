@@ -69,7 +69,7 @@ html,body
     margin-top: 16vh;
 }
 
-#heading h1
+#firstHead
 {
     line-height: 0.9;
     opacity: 0.6;
@@ -84,21 +84,29 @@ html,body
     font-weight: 500;
 }
 
+.blocktext
+{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: end;
+}
+
 .blocktext h5
 {
     text-transform: uppercase;
-    text-align: right;
     font-size: 2vw;
-}
-
-.blocktext
-{
     width: fit-content;
+
 }
 
-#heading #designer
+#designer
 {
     margin-left: 15vw;
+    line-height: 0.9;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-size: 9.5vw;
 }
 
 #samllheadings
@@ -325,4 +333,15 @@ html,body
     text-decoration: none;
     text-transform: uppercase;
 
+}
+
+.bounding
+{
+    overflow: hidden;
+    width:fit-content;
+}
+
+.bounding .boundingelem
+{
+    transform: translateY(100%);
 }
