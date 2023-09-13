@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", function()
 });
 const scroll = new LocomotiveScroll(
 {
-    el: document.querySelector('#main'),
+    el: document.querySelector('#main','#minicircle'),
     smooth: true
 });
+
 
 const minicircle = document.querySelector("#minicircle");
 function circleMouse() 
@@ -51,8 +52,17 @@ function firstpageAnime()
 
     tl.from("#nav", {
         y: "-10",
-        duration: 2,
+        duration: 1.4,
         opacity: 0,
         ease: Expo.easeInOut
     });
+
+    tl.to(".boundingelem", {
+        y: 0,
+        duration: 2,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
 }
+
+firstpageAnime();
